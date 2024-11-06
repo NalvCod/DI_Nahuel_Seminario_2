@@ -24,39 +24,41 @@ class Seminario_2 : AppCompatActivity() {
         carta2 = findViewById(R.id.Carta2)
         carta3 = findViewById(R.id.Carta3)
 
-        var esTrasera = true
+        var esTrasera1 = true
+        var esTrasera2 = true
+        var esTrasera3 = true
 
         carta1.setOnClickListener{
-            if (esTrasera){
+            if (esTrasera1){
                 carta1.setImageResource(R.drawable.c4)
-                esTrasera = false
+                esTrasera1 = false
 
             }else {
                 carta1.setImageResource(R.drawable.c1)
-                esTrasera = true
+                esTrasera1 = true
             }
         }
 
         carta2.setOnClickListener{
-            if (esTrasera){
+            if (esTrasera2){
                 carta2.setImageResource(R.drawable.c2)
-                esTrasera = false
+                esTrasera2 = false
                 //aaaa
 
             }else {
                 carta2.setImageResource(R.drawable.c1)
-                esTrasera = true
+                esTrasera2 = true
             }
         }
 
         carta3.setOnClickListener{
-            if (esTrasera){
+            if (esTrasera3){
                 carta3.setImageResource(R.drawable.c3)
-                esTrasera = false
+                esTrasera3 = false
 
             }else {
                 carta3.setImageResource(R.drawable.c1)
-                esTrasera = true
+                esTrasera3 = true
             }
         }
 
