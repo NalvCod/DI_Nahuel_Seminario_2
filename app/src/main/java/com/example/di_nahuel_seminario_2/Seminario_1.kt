@@ -16,8 +16,8 @@ class Seminario_1 : AppCompatActivity() {
 
         numero = findViewById(R.id.contador)
         var cambiarActividad = Intent(this, BOOM::class.java)
-
         var num = numero.text.toString().toLong()
+
         object : CountDownTimer(num*1000, 1000){
             var fontsize = numero.textSize.toFloat()
             override fun onTick(millisUntilFinished: Long) {
@@ -28,7 +28,6 @@ class Seminario_1 : AppCompatActivity() {
             }
 
             override fun onFinish() {
-                Log.i(this@Seminario_1.toString(), "Adio")
                 startActivity(cambiarActividad)
             }
 
